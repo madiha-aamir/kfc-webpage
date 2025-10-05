@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KFC Pakistan</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-p1CmjXfWj2+N+r3AxuTH1mI7G2uI3xHcfDfP5PvV1JDe5KzW2KqIvD1Fm5x8hhjTSLtl7sFJmUjs3kFk5j5aQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar links hover */
+        .navbar-nav .nav-link {
+            transition: 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #EA002A !important;
+            transform: scale(1.1);
+        }
+
+        /* Section titles */
+        h2.section-title {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #EA002A;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        /* Explore menu hover */
+        .menu-card img {
+            transition: all 0.4s ease;
+        }
+        .menu-card img:hover {
+            transform: scale(1.08);
+            opacity: 0.85;
+        }
+
+        /* Cards hover for Best Sellers and Top Deals */
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(255,0,0,0.5);
+            transition: all 0.3s ease;
+        }
+
+        /* Top Deals images hover */
+        .top-deal img:hover {
+            transform: scale(1.05);
+            transition: all 0.4s ease;
+        }
+
+        /* Buttons hover */
+        button:hover {
+            background: #fff;
+            color: #EA002A;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#000; font-size:16px; padding:15px 0;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color:#EA002A; font-family:'Alfa Slab One', sans-serif; font-size:28px; font-style:italic;">KFC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border:none;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="display:flex; justify-content:space-between; width:100%;">
+            <ul class="navbar-nav" style="display:flex; gap:15px;">
+                <li class="nav-item"><a class="nav-link" href="#pickup" style="color:#fff; font-weight:600; border:1px solid #EA002A; border-radius:5px; padding:5px 10px;">Pickup</a></li>
+                <li class="nav-item"><a class="nav-link" href="#delivery" style="color:#fff; font-weight:600; border:1px solid #EA002A; border-radius:5px; padding:5px 10px;">Delivery</a></li>
+            </ul>
+            <ul class="navbar-nav" style="display:flex; gap:20px; align-items:center;">
+                <li class="nav-item"><a class="nav-link" href="#home" style="color:#fff; font-size:18px;">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#explore" style="color:#fff; font-size:18px;">Explore Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#bestsellers" style="color:#fff; font-size:18px;">Best Sellers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#topdeals" style="color:#fff; font-size:18px;">Top Deals</a></li>
+                <li class="nav-item position-relative">
+                    <a class="nav-link" href="#bucket" style="color:#fff; font-size:24px; position:relative;">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span style="position:absolute; top:-8px; right:-8px; background:#EA002A; color:#fff; border-radius:50%; font-size:16px; padding:4px 6px; display:flex; align-items:center; justify-content:center;">
+                            <i class="fa-solid fa-plus" style="font-size:14px;"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn" href="#login" style="background:#EA002A; color:#fff; border:none; border-radius:5px; padding:10px 25px; font-weight:700; font-size:16px;">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home" style="width:100%; height:100vh; background-image:url('kfc.jpg'); background-repeat:no-repeat; background-position:center; background-size:cover; border-radius:15px;">
+</section>
+
+<!-- Explore Menu Section -->
+<section id="explore" style="padding:80px 20px; background:#000;">
+    <div class="container">
+        <h2 class="section-title">Explore Our Menu</h2>
+        <div class="row g-4 justify-content-center">
+
+            <!-- Menu Items -->
+            <div class="col-md-2 d-flex justify-content-center">
+                <div class="menu-card" style="background:#1a1a1a; width:180px; height:180px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden; position:relative;">
+                    <img src="download (5).jpeg" alt="Promotion Deals">
+                    <h5 style="position:absolute; bottom:10px; color:#EA002A; font-family:'Oswald', sans-serif; font-size:16px;">Promotion Deals</h5>
+                </div>
+            </div>
+
+            <div class="col-md-2 d-flex justify-content-center">
+                <div class="menu-card" style="background:#1a1a1a; width:180px; height:180px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden; position:relative;">
+                    <img src="download (12).jpeg" alt="Signature Box">
+                    <h5 style="position:absolute; bottom:10px; color:#EA002A; font-family:'Oswald', sans-serif; font-size:16px;">Signature Box</h5>
+                </div>
+            </div>
+
+            <div class="col-md-2 d-flex justify-content-center">
+                <div class="menu-card" style="background:#1a1a1a; width:180px; height:180px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden; position:relative;">
+                    <img src="download (4).jpeg" alt="Everyday Value">
+                    <h5 style="position:absolute; bottom:10px; color:#EA002A; font-family:'Oswald', sans-serif; font-size:16px;">Everyday Value</h5>
+                </div>
+            </div>
+
+            <div class="col-md-2 d-flex justify-content-center">
+                <div class="menu-card" style="background:#1a1a1a; width:180px; height:180px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden; position:relative;">
+                    <img src="download (13).jpeg" alt="Ala Carte">
+                    <h5 style="position:absolute; bottom:10px; color:#EA002A; font-family:'Oswald', sans-serif; font-size:16px;">Ala Carte</h5>
+                </div>
+            </div>
+
+            <div class="col-md-2 d-flex justify-content-center">
+                <div class="menu-card" style="background:#1a1a1a; width:180px; height:180px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden; position:relative;">
+                    <img src="download (14).jpeg" alt="Combo Deals">
+                    <h5 style="position:absolute; bottom:10px; color:#EA002A; font-family:'Oswald', sans-serif; font-size:16px;">Combo Deals</h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Best Sellers Section -->
+<section id="bestsellers" style="padding:80px 20px; background:#111;">
+    <div class="container">
+        <h2 class="section-title">Best Sellers</h2>
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="card bg-dark text-white h-100">
+                    <img src="download (5).jpeg" class="card-img-top" alt="Krunch Burger" style="height:250px; object-fit:cover;">
+                    <div class="card-body" style="font-family:'Oswald', sans-serif; font-size:20px;">
+                        <h5 class="card-title">Krunch Burger</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-dark text-white h-100">
+                    <img src="download.jpeg" class="card-img-top" alt="Krunck Combo" style="height:250px; object-fit:cover;">
+                    <div class="card-body" style="font-family:'Oswald', sans-serif; font-size:20px;">
+                        <h5 class="card-title">Krunck Combo</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-dark text-white h-100">
+                    <img src="download (3).jpeg" class="card-img-top" alt="Chicken and Chips" style="height:250px; object-fit:cover;">
+                    <div class="card-body" style="font-family:'Oswald', sans-serif; font-size:20px;">
+                        <h5 class="card-title">Chicken and Chips</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-dark text-white h-100">
+                    <img src="download (4).jpeg" class="card-img-top" alt="Hot Wings" style="height:250px; object-fit:cover;">
+                    <div class="card-body" style="font-family:'Oswald', sans-serif; font-size:20px;">
+                        <h5 class="card-title">Hot Wings</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Top Deals Section -->
+<section id="topdeals" style="padding:80px 20px; background:#111;">
+    <div class="container">
+        <h2 class="section-title">Top Deals</h2>
+        <div class="row g-4 justify-content-start">
+
+            <div class="col-md-3">
+                <div class="card bg-dark text-white h-100 top-deal" style="padding:20px; border:none; border-radius:15px;">
+                    <img src="download (6).jpeg" alt="Crispy Duo Box" style="width:100%; height:180px; object-fit:cover; border-radius:15px; margin-bottom:15px;">
+                    <h4 style="font-family:'Oswald', sans-serif; color:#EA002A;">Crispy Duo Box</h4>
+                    <p style="font-family:'Roboto', sans-serif; font-size:14px; color:#fff;">Turn up the fun with 5 pcs Hot & Crispy Chicken + 1 Large fries + 2 Regular drinks</p>
+                    <p style="font-family:'Oswald', sans-serif; font-weight:700; font-size:18px; color:#fff;">Rs 1350</p>
+                    <button>Add to bucket</button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-dark text-white h-100 top-deal" style="padding:20px; border:none; border-radius:15px;">
+                    <img src="download (7).jpeg" alt="Xtreme Duo Box" style="width:100%; height:180px; object-fit:cover; border-radius:15px; margin-bottom:15px;">
+                    <h4 style="font-family:'Oswald', sans-serif; color:#EA002A;">Xtreme Duo Box</h4>
+                    <p style="font-family:'Roboto', sans-serif; font-size:14px; color:#fff;">2 Signature Zingers + 2 pcs Hot & Crispy Chicken + 1 Large fries + 2 Regular drinks</p>
+                    <p style="font-family:'Oswald', sans-serif; font-weight:700; font-size:18px; color:#fff;">Rs 1560</p>
+                    <button>Add to bucket</button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-dark text-white h-100 top-deal" style="padding:20px; border:none; border-radius:15px;">
+                    <img src="download (8).jpeg" alt="Value Bucket" style="width:100%; height:180px; object-fit:cover; border-radius:15px; margin-bottom:15px;">
+                    <h4 style="font-family:'Oswald', sans-serif; color:#EA002A;">Value Bucket</h4>
+                    <p style="font-family:'Roboto', sans-serif; font-size:14px; color:#fff;">Enjoy 9 pcs of Signature Crispy Fried Chicken, hand-breaded in-house.</p>
+                    <p style="font-family:'Oswald', sans-serif; font-weight:700; font-size:18px; color:#fff;">Rs 2050</p>
+                    <button>Add to bucket</button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-dark text-white h-100 top-deal" style="padding:20px; border:none; border-radius:15px;">
+                    <img src="download (9).jpeg" alt="Family Festival 3" style="width:100%; height:180px; object-fit:cover; border-radius:15px; margin-bottom:15px;">
+                    <h4 style="font-family:'Oswald', sans-serif; color:#EA002A;">Family Festival 3</h4>
+                    <p style="font-family:'Roboto', sans-serif; font-size:14px; color:#fff;">4 Zinger burgers + 4 pcs Hot & Crispy Chicken + 2 Dinner rolls + 1.5 Liter drink</p>
+                    <p style="font-family:'Oswald', sans-serif; font-weight:700; font-size:18px; color:#fff;">Rs 2590</p>
+                    <button>Add to bucket</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Featured Top Deals Section (Images) -->
+<section id="featured-deals" style="padding:60px 20px; background:#111; text-align:center;">
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-md-6" style="display:flex; justify-content:center;">
+                <img src="download (10).jpeg" alt="Deal 1" style="width:100%; max-width:600px; height:300px; object-fit:cover; border-radius:15px;" class="top-deal-img">
+            </div>
+
+            <div class="col-md-6" style="display:flex; justify-content:center;">
+                <img src="download (11).jpeg" alt="Deal 2" style="width:100%; max-width:600px; height:300px; object-fit:cover; border-radius:15px;" class="top-deal-img">
+            </div>
+
+            <div class="col-md-6" style="display:flex; justify-content:center;">
+                <img src="images.jpeg" alt="Deal 3" style="width:100%; max-width:600px; height:300px; object-fit:cover; border-radius:15px;" class="top-deal-img">
+            </div>
+
+            <div class="col-md-6" style="display:flex; justify-content:center;">
+                <img src="kfc3.jpg" alt="Deal 4" style="width:100%; max-width:600px; height:300px; object-fit:cover; border-radius:15px;" class="top-deal-img">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer style="background:#000; color:#fff; text-align:center; padding:20px; font-family:'Roboto', sans-serif; font-size:14px;">
+    <p>&copy; 2025 KFC Pakistan | All Rights Reserved</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
